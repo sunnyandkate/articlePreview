@@ -1,0 +1,171 @@
+html,body{
+	height:100%;
+	width:100%;
+}
+body{
+	font-family:'Manrope', sans-serif;
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-size:13px;
+	background:hsl(210, 46%, 95%);
+}
+
+.container{
+	width:80%;
+	max-width:400px;
+	margin:3em auto;
+	border-radius:10px;
+	background:white;
+	box-shadow: 0px 8px 10px hsl(212, 23%, 69%);
+}
+.content-img{
+	height: 200px;
+    width: 100%;
+	border-top-right-radius:10px;
+	border-top-left-radius:10px;
+}
+
+.main-content{
+	height:50%;
+	padding: 2em;
+	
+}
+.main-content .description{
+	color:hsl(217, 19%, 35%);
+
+}
+.main-content p{
+	color:hsl(214, 17%, 51%);
+}
+.bottom{
+	height:10%;
+	padding-bottom:.5em;
+}
+.profile-pic{
+	height: 3em;
+	width: 3em;
+	border-radius: 50%;
+	display: inline-block;
+	padding-left:1em;
+}
+.nameDate{
+	display:inline-block;
+	margin-right:6em;
+	padding-left:1em;
+}
+.nameDate .name{
+	color:hsl(217, 19%, 35%);
+	line-height:.2;
+}
+.nameDate p{
+	font-size:.9em;
+	color:hsl(214, 17%, 51%);
+	
+}
+.shareBefore{
+	background:hsl(210, 46%, 95%);
+	padding:7px;
+	border-radius:50%;
+	cursor:pointer;
+}
+.social{
+	background:hsl(217, 19%, 35%);
+	display:none;
+	padding: .5em;
+	margin-bottom: -10px;
+	border-radius: 10px;
+	   
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+.social p{
+	display:inline-block;
+	text-transform:uppercase;
+	color:hsl(212, 23%, 69%);
+	letter-spacing:2.5px;
+	margin-left:1em;
+	margin-right:1.5em;
+	vertical-align:middle;
+}
+.social .share{
+	background:hsl(212, 23%, 69%);
+	color:white;
+	padding:7px;
+	border-radius:50%;
+	margin-left:3.5em;
+	vertical-align:middle;
+	cursor:pointer;
+}
+
+.social img{
+	margin-left: .5em;
+	margin-right: .5em;
+	vertical-align:middle;
+}
+
+
+
+@media(min-width:880px){
+	
+	.flex-container{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100%;
+	}
+	.container{
+		display: flex;
+		align-items: center;
+		height:40%;
+		max-width:700px;
+	}
+	
+	
+	
+	.content-img{
+		display:inline-block;
+		width:40%;
+		height:100%;
+		border-top-right-radius:0;
+		border-bottom-left-radius:10px;
+	}
+	.right-container{
+		display:inline-block;
+		width:60%;
+		padding:2em;
+	}
+	.social .share{
+		display:none;
+	}
+	.shareBefore{
+		margin-left:5em;
+	}
+	.bottom{
+		position:relative;
+		padding-bottom:2em;
+	}
+	.social{
+		position:absolute;
+		right:-15%;
+		top:-4em;
+		border-radius:10px;
+		padding-top:0;
+		padding-bottom:0;
+	}
+	.social::after{
+	  content: "";
+	  position: absolute;
+	  top: 100%;
+	  left: 50%;
+	  margin-left: -5px;
+	  border-width: 7px;
+	  border-style: solid;
+	  border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+	}
+	
+	
+	
+}
